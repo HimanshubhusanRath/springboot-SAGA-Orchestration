@@ -1,0 +1,31 @@
+server:
+  port: 8082
+
+spring:
+  datasource:
+    url: jdbc:h2:mem:notificationdb
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+
+axon:
+  # By default axon framework uses XStream serializer. Here, we are switching to Jackson
+  serializer:
+    general: jackson
+    events: jackson
+    messages: jackson
+
+  axonserver:
+    servers: localhost:8124
+    token: ""
+    context: default
+
+  eventhandling:
+    processors:
+      paymentProcessor:
+        mode: subscribing
+
+
+logging:
+  level:
+    com.hr: DEBUG
