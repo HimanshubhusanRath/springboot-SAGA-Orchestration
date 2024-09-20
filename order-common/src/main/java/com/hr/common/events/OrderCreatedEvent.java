@@ -9,6 +9,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class OrderCreatedEvent {
     private String orderCode;
-    private String payemntInfo;
+    private String paymentInfo;
     private String userEmail;
 }

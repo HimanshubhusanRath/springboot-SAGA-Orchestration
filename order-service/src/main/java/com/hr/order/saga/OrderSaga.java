@@ -28,7 +28,7 @@ public class OrderSaga {
 	public void handle(final OrderCreatedEvent event) {
 		LOG.debug("------- SAGA - Start -------");
 		LOG.debug("Order is placed. Now process the payment");
-		commandGateway.send(new ProcessPaymentCommand(event.getOrderCode(), event.getPayemntInfo(), event.getUserEmail()));
+		commandGateway.send(new ProcessPaymentCommand(event.getOrderCode(), event.getPaymentInfo(), event.getUserEmail()));
 	}
 
 	@SagaEventHandler(associationProperty = "orderCode")

@@ -11,7 +11,6 @@ import java.io.Serializable;
 @AllArgsConstructor
 @NoArgsConstructor
 public class ProcessPaymentCommand  implements Serializable {
-    @TargetAggregateIdentifier
     private String orderCode;
     private String paymentInfo;
     private String userEmail;
