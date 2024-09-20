@@ -1,0 +1,17 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.hr</groupId>
+	<artifactId>springboot-saga-orchestration</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<name>springboot-saga-orchestration</name>
+	<description>springboot-saga-orchestration</description>
+
+	<modules>
+		<module>order-service</module>
+		<module>payment-service</module>
+		<module>notification-service</module>
+        <module>order-common</module>
+    </modules>
+
+</project>
